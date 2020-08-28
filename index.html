@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <header>
-            <h1>Converta todo seu texto </h1>
-        </header>
-        <div>
-            <p>
-                <input type="button" value="MAIUSCULO" onclick="upper()"> <input type="button" value="minusculo" onclick="lower()"> 
-                <input type="button" value="AlTeRnAdO" onclick="alternado()"> 
-                <input type="button" value="Primeira Letra" onclick="primeiraLetra()">
-                <input type="button" value="Inicio da frase" onclick="inicioFrase()"> 
-                <input type="button" value="Inverter" onclick="inverter()"> 
-                <input type="button" value="Texto original" onclick="originalText()">
+    <main id="ferramenta">
+        <header id="fheader">
+            <h1 id="titulo">Converta todo seu texto </h1>
+            <p id="btntext">
+                <input type="button" class="btnferramenta" value="MAIUSCULO" onclick="upper()"> 
+                <input type="button" class="btnferramenta" value="minusculo" onclick="lower()"> 
+                <input type="button" class="btnferramenta" value="AlTeRnAdO" onclick="alternado()"> 
+                <input type="button" class="btnferramenta" value="Primeira Letra" onclick="primeiraLetra()">
+                <input type="button" class="btnferramenta" value="Inicio da frase" onclick="inicioFrase()"> 
+                <input type="button" class="btnferramenta" value="Inverter" onclick="inverter()"> 
+                <input type="button" class="btnferramenta" value="Texto original" onclick="originalText()"> 
             </p>
-            
-            <p><textarea name="ttext" id="ctext" cols="110" rows="10" onchange="original()" onclick="mudaCor()" ondragend="" placeholder="Insira seu texto aqui !"></textarea> <br> <input type="button" value="Tornar original" onclick="tornarOriginal()"> 
+        </header>
+        <div id="divftexto">
+            <p>
+                <textarea name="ttext" id="ctext" cols="110" rows="10" onchange="original()" onclick="mudaCor()" onblur="voltaCor()"  placeholder="Insira seu texto aqui !"></textarea>
+                 <br> 
+                <input type="button" class="btnferramenta" value="Tornar original" onclick="tornarOriginal()"> 
+                <input type="button" class="btnferramenta" value="Copiar" onclick="copiar()">
             </p>
 
         </div>
-        <p >lorem ipsum dolor sit amet consectetur adipisicing elit. non nesciunt totam suscipit eaque vero. labore dolore suscipit excepturi libero! nobis dignissimos qui eligendi ex expedita vero laborum ut repellat nam. </p>
     </main>
     <script src="script.js"></script>
 </body>

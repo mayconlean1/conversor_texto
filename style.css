@@ -5,19 +5,37 @@
     font-size: medium;
 }
 
-h1{
+h1#titulo{
     font-family: 'Bangers', cursive;
     font-size: 30pt;
+    
 }
 
 textarea{
     background-color: #e2e2e2;
 }
-input{
+input.btnferramenta{
     margin: 2px 2px 2px 2px;
     padding: 8px;
     background-color: #e2e2e2;
+    
 }
 input:hover{
     background-color: #b1b1b1;
 }
+
+header#fheader{
+    padding: 10px;
+    width: 800px;
+    
+}
+
+main#ferramenta{
+    background-color: rgb(203, 250, 156);
+    border-radius: 50px;
+    width: 950px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+

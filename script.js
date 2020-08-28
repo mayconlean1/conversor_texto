@@ -19,7 +19,7 @@ function originalText(){
 }
 
 function original(){
-    txt.style = '#e2e2e2;'
+    
     if(primeiroTxt){
         txtOriginal = txt.value
         primeiroTxt = false
@@ -134,7 +134,15 @@ function inverter(){
 
 function mudaCor(){
     txt.style = 'background-color: white'
-    console.log('oi')
+}
+
+function voltaCor(){
+    txt.style = '#e2e2e2;'
+}
+
+function copiar(){
+    txt.select()
+    document.execCommand('copy')
 }
 
 
