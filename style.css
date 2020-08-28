@@ -12,6 +12,7 @@ h1#titulo{
 }
 
 textarea{
+    padding: 0px;
     background-color: #e2e2e2;
 }
 input.btnferramenta{
