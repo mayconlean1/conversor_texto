@@ -31,6 +31,7 @@ header#fheader{
 }
 
 main#ferramenta{
+    display: flexbox;
     background-color: rgb(203, 250, 156);
     border-radius: 50px;
     width: 950px;
