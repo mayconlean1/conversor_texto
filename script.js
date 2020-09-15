@@ -145,4 +145,26 @@ function copiar(){
     document.execCommand('copy')
 }
 
+const removerAcentos = function (){ 
+    let str = txt.value
+    const listaAcentos = {
+        'a' :'áàâãä', 
+        'e':'éèêë' , 
+        'i':'íìîï',
+        'o':'óòôõö',
+        'u':'úùûü' , 
+        'n':'ñ',
+        'c':'ç',
+        'y': 'ý'
+    }
+    for(l in listaAcentos){
+        let la = listaAcentos[l]
+        let ula = listaAcentos[l].toUpperCase()
+        let mlb = l.toUpperCase()
+        str = eval(`str.replace(/[${la}]/,"${l}")`)
+        str = eval(`str.replace(/[${ula}]/,"${mlb}")`)
+    }
+    txt.value = str
+}
+
 
